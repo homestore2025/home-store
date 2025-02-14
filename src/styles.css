@@ -1,0 +1,303 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap" rel="stylesheet');
+*{
+    font-family: "Poppins", sans-serif;
+}
+/*----------estilos del menu----------------*/
+.bg-navaux{
+    background-color: #b39569;
+}
+
+.navaux{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 7px 0 7px 120px;
+    
+}
+.navbar{
+    padding: 5px 50px 5px 50px;
+}
+
+.navbar a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+}
+
+.bg-home{
+    background-color: #a07b45;
+}
+
+.navbar-nav a{
+    color: #212529 !important;
+}
+
+.navbar-nav a:hover{
+    color: #a07b45 !important;
+}
+
+.w-current{
+    color:#a07b45 !important;
+    background-color: #0000 !important;
+    border-bottom: 3px solid #a07b45 !important;
+}
+
+.location{
+    display: inline-flex;
+}
+
+.location a{
+    text-decoration: none;
+    color: #212529;
+    
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        padding: 10px 13px 5px 10px;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: start;
+        padding-top: 5px;
+    }
+    .navaux {
+        padding: 3px 15px 3px 15px;
+    }
+    .navaux p{
+        text-align: center;
+    }
+  }.footer{
+    height: 100%;
+  }
+
+/*----------estilos de section carusel----------------*/
+  @media (max-width: 768px) {
+
+    .slide{
+      max-height: 300px;
+    }
+     .carousel-item img{
+      height: 280px !important;
+    }
+  
+  }  
+
+
+  /*----------estilos de section pruductos----------------*/
+  .Prod-container{
+    width: 100%;
+    height: 300px;
+  }
+
+  .prod{
+    display: inline-flex;
+  }
+
+  .prod hr{
+    width: 200px;
+    border: 0;
+    border-top: 1.5px solid #999; 
+    border-bottom: 1.5px solid #333;
+    height:0;
+    margin-left: 10px;
+    margin-right: 10px;
+  } 
+
+  .Prod-container:hover{
+    cursor: pointer;
+  }
+
+  .Prod-container .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+   .div-prod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70px;
+   }
+
+   .div-prod h3{
+    color: #fff;
+   }
+
+  .col-sm-4{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .col-sm-3{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  @media (max-width: 768px) {
+
+    .prod h2{
+      font-size: 25px;
+    }
+
+    .prod hr{
+      width: 90px;
+      
+    } 
+
+    .Prod-container{
+      margin-top: 25px;
+    }
+
+    .Prod-container h3{
+      font-size: 20px;
+    }
+  }
+
+/*----------estilos de section Tipos de cortinas----------------*/
+  .t-cortinas{
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .t-cortinas h2{
+    font-family:"Yellowtail",sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+  .t-cortinas p{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 500;
+    text-align: justify;
+  }
+
+  .t-cortinas ul li{
+    font-family:"Montserrat",sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+    .onda{
+      display: none;
+    }
+  }
+  
+  
+
+  /*----------estilos de Beneficios----------------*/
+
+  .bf{
+    height: 200px;
+  }
+
+  .beneficios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beneficios img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .beneficios h4{
+    color: #fff !important;
+    margin-top: 15px;
+  }
+
+  .mr{
+    margin-right: 20px;
+  }
+
+
+  @media (max-width: 768px) {
+    .bf{
+      height: 420px;
+    }
+    .bf h2{
+      font-size: 25px;
+    }
+
+    .Prod-container{
+      margin-top: 25px;
+    }
+
+    .Prod-container h3{
+      font-size: 25px;
+    }
+
+    .mr{
+      margin-right: 0px;
+    }
+  }
+
+  /*----------estilos de Beneficios----------------*/
+
+  .footer{
+    width: 100%;
+    height: 100%;
+    background-color: #212529;
+    margin-bottom: 0px;
+  }
+
+  .footer a{
+    color: #fff;
+  }
+
+  .hr{
+    display: block !important;
+    border: 0;
+    border-top: 1.5px solid #fff; 
+    border-bottom: 1.5px solid #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .footer hr{
+    display: none;
+  }
+
+
+  @media (max-width: 768px) {
+    
+
+    .footer hr{
+      display: block !important;
+      border: 0;
+      border-top: 1.5px solid #fff; 
+      border-bottom: 1.5px solid #fff;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
+  .footer img{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .footer .icon-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer .icon-p a{
+    margin-top: 10px;
+  }

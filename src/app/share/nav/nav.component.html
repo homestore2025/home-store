@@ -1,0 +1,23 @@
+<div class="bg-navaux">
+  <div class="container navaux">
+    <p class="pt-3 mr-3">¿Desea Agendar Una Visita Gratis? </p>
+    <a class="btn btn-dark btn-sm" [routerLink]="['/contacto']" >Agendar Ahora</a>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="/img/logo_home-store.png" width="70" height="65" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" [routerLink]="['/inicio']" routerLinkActive="w-current">Inicio</a>
+        <a class="nav-link" [routerLink]="['/corinasypersianas']" routerLinkActive="w-current">Cortinas y Persianas</a>
+        <a class="nav-link" [routerLink]="['/centrosdeentrenimientotv']" routerLinkActive="w-current">Centros de Entretenimiento TV</a>
+        <a class="nav-link" [routerLink]="['/contacto']" routerLinkActive="w-current">Contacto</a>
+      </div>
+    </div>
+  </nav>
+  
