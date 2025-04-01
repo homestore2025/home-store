@@ -1,6 +1,20 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4 text-center">Cortinas y Persianas</h1>
-      <p class="lead text-center">Esta Pagina se encuentra en Desarrollo</p>
+      <p class="lead text-center">Transforma tus espacios con cortinas y persianas a medida, elegantes y funcionales.</p>
+    </div>
+  </div>
+
+
+  <div class="mb-5">
+    <div class="container-f">
+        <div *ngFor="let Cortinas of cortina" class="card mr-2" style="width: 25rem;">
+            <img src="/img/{{Cortinas.imagen}}" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">{{Cortinas.nombre}}</h4>
+              <p class="card-text"><span>Especificaciones Tecnica: </span>{{Cortinas.descripcion}}</p>
+              <a href="https://wa.me/message/JMNANPLSHPG3G1" class="btn btn-success ">Cotizar Ahora</a>
+            </div>
+        </div> 
     </div>
   </div>

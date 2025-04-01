@@ -3,6 +3,7 @@ import HomeComponent from './paginas/home/home.component';
 import { CortinasComponent } from './paginas/cortinas/cortinas.component';
 import { CentrosentrenimientotvComponent } from './paginas/centrosentrenimientotv/centrosentrenimientotv.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
+import { NoFoundComponent } from './paginas/no-found/no-found.component';
 
 export const routes: Routes = [
     {
@@ -20,6 +21,10 @@ export const routes: Routes = [
     {
         path: 'contacto',
         loadComponent: () => import('./paginas/contacto/contacto.component').then((m)=>m.ContactoComponent)
+    },
+    {
+        path: '404',
+        loadComponent: () => import('./paginas/no-found/no-found.component').then((m)=>m.NoFoundComponent)
     },
     {
         path: '**',

@@ -1,33 +1,33 @@
 <div class="main-contacto">
     <div class="container">
-        <form class="form">
+        <form class="form" [formGroup]="formContacto" (ngSubmit)="onSubmit()">
             <div class="title">
                 <h2>Agende su cita con nosotros</h2>
                 <span>En breve uno de nuestros asesores lo contactara</span>
             </div>
             <div class="form-row">
               <div class="col-12 col-md-12 f-mb">
-                <input type="text" class="form-control" placeholder="Nombre Completo">
+                <input type="text" class="form-control" placeholder="Nombre Completo" formControlName="nombre">
               </div>
               <div class="col-12 col-md-6 f-mb">
-                <input type="text" class="form-control" placeholder="Correo electronico">
+                <input type="text" class="form-control" placeholder="Correo electronico" formControlName="correo">
               </div>
               <div class="col-12 col-md-6 f-mb">
-                <input type="text" class="form-control" placeholder="Numero de contacto">
+                <input type="text" class="form-control" placeholder="Numero de contacto" formControlName="telefono">
               </div>
               <div class="col-12 col-md-12 f-mb">
-                <input type="text" class="form-control" placeholder="Direccion">
+                <input type="text" class="form-control" placeholder="Direccion" formControlName="direccion">
               </div>
               <div class="col-12 col-md-12 f-mb">
                 <label for="exampleFormControlSelect1">¿En que producto esta interesado?</label>
-                <select class="form-control">
+                <select class="form-control" formControlName="producto">
                     <option>Cortina</option>
                     <option>Centro de entretenimeinto</option>
                     <option>Polarizado Arquitectonico </option>
                 </select>
               </div>
             </div>
-            <button type="button" class="btn btn-dark btn-lg btn-block">Enviar</button>
+            <button type="submit" class="btn btn-dark btn-lg btn-block">Enviar</button>
           </form>
     </div>
 </div>

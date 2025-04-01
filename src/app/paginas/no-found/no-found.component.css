@@ -1,0 +1,21 @@
+
+
+    .no-found{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f9fa;
+    }
+    .error-container {
+        text-align: center;
+    }
+    .error-code {
+        font-size: 120px;
+        font-weight: bold;
+        color: #343a40;
+    }
+    .error-message {
+        font-size: 24px;
+        color: #6c757d;
+    }
